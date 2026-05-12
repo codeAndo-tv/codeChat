@@ -67,6 +67,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "port": 5300,
+            "open": true
+          },
           "configurations": {
             "production": {
               "buildTarget": "codeChat:build:production"
