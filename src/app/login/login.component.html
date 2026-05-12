@@ -1,0 +1,49 @@
+<!-- main: contenedor principal de la página de login -->
+<!-- class="login-page": vincula con el CSS que definimos en login.component.css -->
+<main class="login-page">
+  
+  <!-- section: agrupa el contenido de la tarjeta de login -->
+  <!-- class="login-card": aplica el estilo de tarjeta con bordes redondeados -->
+  <section class="login-card">
+
+    <!-- div: contenedor para el bloque de la marca (título) -->
+    <!-- class="brand-block": centra el texto del título -->
+    <div class="brand-block">
+      <!-- h1: título principal de la página -->
+      <h1>Welcome to codeChat</h1>
+    </div>
+
+    <!-- p: párrafo con el subtítulo debajo del título -->
+    <!-- class="subtitle": aplica color gris claro y margen inferior -->
+    <!-- <strong>: pone el texto en negrita -->
+    <p class="subtitle">Sign in to chat with <strong>codeChat</strong>.</p>
+
+    <!-- form: formulario HTML para ingresar datos -->
+    <!-- class="login-form": aplica estilos a labels, inputs y botón dentro del form -->
+    <form class="login-form">
+      
+      <!-- label: etiqueta que describe el campo de texto -->
+      <!-- for="username": conecta este label con el input que tiene id="username" -->
+      <label for="username">Username</label>
+      
+      <!-- input: campo de texto donde el usuario escribe su nombre -->
+      <!-- id="username": identificador único, vinculado con el label de arriba -->
+      <!-- type="text": permite escribir cualquier texto -->
+      <!-- placeholder: texto que se ve cuando el campo está vacío -->
+      <input id="username" type="text" placeholder="e.g. carlos.gardel">
+
+      <!-- label: etiqueta para el campo de contraseña -->
+      <!-- for="password": conecta con el input de id="password" -->
+      <label for="password">Password</label>
+      
+      <!-- input: campo de contraseña -->
+      <!-- type="password": oculta los caracteres con puntitos -->
+      <input id="password" type="password" placeholder="Enter your password">
+
+      <!-- button: botón para enviar el formulario -->
+      <!-- type="submit": al hacer click, envía el formulario -->
+      <button type="submit">Login</button>
+      
+    </form>
+  </section>
+</main>

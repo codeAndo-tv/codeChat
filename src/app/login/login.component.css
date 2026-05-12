@@ -1,0 +1,151 @@
+/* ============================================ */
+/* login-page: el fondo de toda la pantalla     */
+/* ============================================ */
+.login-page {
+  min-height: 100vh;                    /* Ocupa al menos el 100% del alto de la ventana */
+  display: flex;                        /* Activa el modo flexible para centrar contenido */
+  justify-content: center;            /* Centra horizontalmente el contenido */
+  align-items: center;                /* Centra verticalmente el contenido */
+  padding: 24px;                      /* Espacio interior para que en móvil no toque los bordes */
+  background-color: #1f2024;           /* Fondo oscuro de la página */
+  color: #ececf1;                      /* Color del texto (blanco hueso) */
+}
+
+/* ============================================ */
+/* login-card: la tarjeta blanca/oscura centrada*/
+/* ============================================ */
+.login-card {
+  width: 460px;                       /* Ancho fijo de la tarjeta */
+  max-width: 100%;                   /* En pantallas chicas no se desborda */
+  background-color: #25272d;           /* Fondo de la tarjeta (gris oscuro) */
+  border: 1px solid #353842;          /* Borde sutil */
+  border-radius: 20px;                /* Esquinas redondeadas */
+  padding: 24px;                      /* Espacio interior */
+}
+
+/* ============================================ */
+/* brand-block: centra el título               */
+/* ============================================ */
+.brand-block {
+  text-align: center;                  /* Centra el texto del título */
+}
+
+/* ============================================ */
+/* brand-logo: espacio para un logo (opcional) */
+/* ============================================ */
+.brand-logo {
+  width: 90px;                        /* Ancho del logo */
+  height: 90px;                       /* Alto del logo */
+  display: block;                      /* Ocupa toda la línea */
+  margin: 0 auto;                     /* Centrado horizontal */
+}
+
+/* ============================================ */
+/* Título h1 dentro de brand-block            */
+/* ============================================ */
+.brand-block h1 {
+  margin: 8px 0 6px 0;               /* Margen: arriba 8px, derecha 0, abajo 6px, izquierda 0 */
+  font-size: 32px;                    /* Tamaño del título */
+}
+
+/* ============================================ */
+/* subtitle: texto debajo del título          */
+/* ============================================ */
+.subtitle {
+  margin: 0 0 20px 0;                 /* Solo margen inferior de 20px */
+  color: #a7adb7;                      /* Color gris claro */
+  font-size: 16px;                    /* Tamaño del texto */
+}
+
+/* ============================================ */
+/* LABELS: etiquetas de los campos            */
+/* ============================================ */
+.login-form label {
+  display: block;                      /* Ocupa toda la línea, empuja el input abajo */
+  margin-top: 10px;                    /* Espacio arriba */
+  margin-bottom: 6px;                 /* Espacio abajo */
+  font-size: 14px;                    /* Tamaño del label */
+  font-weight: 600;                   /* Texto seminegrita */
+}
+
+/* ============================================ */
+/* INPUTS: campos de texto del formulario     */
+/* ============================================ */
+.login-form input {
+  width: 100%;                        /* Ocupa todo el ancho disponible */
+  border: 1px solid #424652;          /* Borde fino gris */
+  border-radius: 10px;                /* Esquinas redondeadas */
+  padding: 11px 12px;                 /* Espacio interior: 11px arriba/abajo, 12px costados */
+  font-size: 16px;                    /* Tamaño del texto que escribe el usuario */
+  background-color: #30323a;           /* Fondo del input (más claro que la tarjeta) */
+  color: #ececf1;                      /* Color del texto dentro del input */
+}
+
+/* ============================================ */
+/* PLACEHOLDER: texto de sugerencia en inputs  */
+/* ============================================ */
+.login-form input::placeholder {
+  color: #a7adb7;                      /* Color gris para el placeholder */
+}
+
+/* ============================================ */
+/* BOTÓN: botón de Login                      */
+/* ============================================ */
+.login-form button {
+  margin-top: 14px;                    /* Espacio arriba del botón */
+  width: 100%;                        /* Ocupa todo el ancho */
+  border: none;                        /* Sin borde */
+  border-radius: 12px;                /* Esquinas redondeadas */
+  background-color: #cf5f6f;           /* Color rojo coral (marca UTNito) */
+  color: #ffffff;                      /* Texto blanco */
+  padding: 12px 16px;                 /* Espacio interior */
+  font-size: 16px;                    /* Tamaño del texto */
+  font-weight: 700;                   /* Texto en negrita */
+  cursor: pointer;                     /* Al pasar el mouse, cambia a manito */
+}
+
+/* ============================================ */
+/* BOTÓN HOVER: cuando el mouse pasa por arriba*/
+/* ============================================ */
+.login-form button:hover {
+  background-color: #b95261;           /* Se oscurece un poco al pasar el mouse */
+}
+
+/* ============================================ */
+/* login-footer: pie de la tarjeta (opcional) */
+/* ============================================ */
+.login-footer {
+  margin-top: 16px;                    /* Espacio arriba */
+  text-align: center;                  /* Texto centrado */
+  color: #a7adb7;                      /* Color gris claro */
+  font-size: 14px;                    /* Tamaño del texto */
+}
+
+/* ============================================ */
+/* program-name: nombre del programa (UTNito)  */
+/* ============================================ */
+.program-name {
+  margin: 0 0 4px 0;                 /* Solo margen inferior */
+  color: #e7a6b0;                      /* Color rosado claro */
+  font-weight: 700;                   /* Negrita */
+}
+
+/* ============================================ */
+/* error-text: mensajes de error (rojo)       */
+/* ============================================ */
+.error-text {
+  margin-top: 8px;                     /* Espacio arriba */
+  margin-bottom: 0;                   /* Sin margen abajo */
+  color: #ff99a9;                      /* Color rojo claro para errores */
+  font-size: 13px;                    /* Tamaño pequeño */
+}
+
+/* ============================================ */
+/* login-capture: texto informativo abajo     */
+/* ============================================ */
+.login-capture {
+  margin-top: 12px;                    /* Espacio arriba */
+  margin-bottom: 0;                   /* Sin margen abajo */
+  color: #a7adb7;                      /* Color gris claro */
+  font-size: 13px;                    /* Tamaño pequeño */
+}

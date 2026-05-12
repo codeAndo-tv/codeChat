@@ -1,0 +1,231 @@
+/* ============================================ */
+/* chat-layout: contenedor principal del chat   */
+/* Ocupa toda la pantalla con flexbox           */
+/* ============================================ */
+.chat-layout {
+  min-height: 100vh;                    /* Ocupa al menos el 100% del alto de la ventana */
+  display: flex;                        /* Flexbox: sidebar a la izquierda, chat a la derecha */
+  background-color: #1f2024;           /* Fondo oscuro general */
+  color: #ececf1;                      /* Color de texto blanco hueso */
+}
+
+/* ============================================ */
+/* sidebar: barra lateral izquierda            */
+/* ============================================ */
+.sidebar {
+  width: 280px;                       /* Ancho fijo de la barra lateral */
+  min-width: 280px;                   /* No se achica menos de 280px */
+  padding: 14px;                      /* Espacio interior */
+  border-right: 1px solid #343740;   /* Línea divisoria derecha */
+  background-color: #15161a;           /* Fondo más oscuro que el chat */
+  display: flex;                        /* Flexbox interno */
+  flex-direction: column;               /* Apila elementos verticalmente */
+  justify-content: space-between;       /* Empuja la parte inferior abajo */
+}
+
+/* ============================================ */
+/* new-chat-btn: botón "+ New chat"           */
+/* ============================================ */
+.new-chat-btn {
+  width: 100%;                        /* Ocupa todo el ancho */
+  padding: 10px;                      /* Espacio interior */
+  border: 1px solid #434752;         /* Borde gris */
+  border-radius: 10px;                /* Esquinas redondeadas */
+  background-color: #272a31;           /* Fondo del botón */
+  color: #ececf1;                      /* Texto blanco hueso */
+  text-align: left;                    /* Texto alineado a la izquierda */
+  cursor: pointer;                     /* Manito al pasar el mouse */
+}
+
+/* ============================================ */
+/* section-title: títulos en la sidebar        */
+/* ============================================ */
+.section-title {
+  margin: 16px 0 8px;                   /* Márgenes: arriba 16px, costados 0, abajo 8px */
+  color: #a8adba;                      /* Color gris claro */
+  text-transform: uppercase;             /* Convierte texto a MAYÚSCULAS */
+  font-size: 12px;                    /* Tamaño pequeño */
+}
+
+/* ============================================ */
+/* chat-filter-input: campo de filtro          */
+/* ============================================ */
+.chat-filter-input {
+  width: 100%;                        /* Ocupa todo el ancho */
+  margin-bottom: 12px;                 /* Espacio abajo */
+  padding: 9px 10px;                   /* Espacio interior */
+  border: 1px solid #454a57;         /* Borde gris */
+  border-radius: 10px;                /* Esquinas redondeadas */
+  background-color: #262b37;           /* Fondo del input */
+  color: #ececf1;                      /* Color del texto */
+  font-size: 14px;                    /* Tamaño del texto */
+}
+
+/* ============================================ */
+/* chat-list: lista de conversaciones          */
+/* ============================================ */
+.chat-list {
+  margin: 0;                            /* Sin margen */
+  padding: 0;                          /* Sin relleno */
+  list-style: none;                    /* Sin viñetas (sin puntitos) */
+}
+
+/* ============================================ */
+/* chat-item: cada conversación en la lista    */
+/* ============================================ */
+.chat-item {
+  margin-bottom: 8px;                  /* Espacio entre items */
+  border: 1px solid transparent;        /* Borde invisible (se activa al seleccionar) */
+  border-radius: 10px;                /* Esquinas redondeadas */
+  padding: 5px;                        /* Espacio interior */
+  display: flex;                        /* Flexbox para alinear contenido */
+  align-items: center;                 /* Centrar verticalmente */
+  gap: 6px;                          /* Espacio entre elementos internos */
+}
+
+/* ============================================ */
+/* chat-item.active: conversación seleccionada */
+/* ============================================ */
+.chat-item.active {
+  border-color: #444854;               /* Borde visible gris */
+  background-color: #2a2d35;           /* Fondo resaltado */
+}
+
+/* ============================================ */
+/* sidebar-bottom: sección inferior del sidebar*/
+/* ============================================ */
+.sidebar-bottom {
+  border-top: 1px solid #2f3139;      /* Línea divisoria superior */
+  padding-top: 10px;                   /* Espacio arriba de la línea */
+}
+
+/* ============================================ */
+/* user-card: tarjeta con avatar y nombre      */
+/* ============================================ */
+.user-card {
+  display: flex;                        /* Flexbox para avatar al lado del nombre */
+  align-items: center;                 /* Centrar verticalmente */
+  gap: 10px;                         /* Espacio entre avatar y nombre */
+  margin-bottom: 8px;                  /* Espacio abajo */
+}
+
+/* ============================================ */
+/* user-avatar: círculo con iniciales          */
+/* ============================================ */
+.user-avatar {
+  width: 38px;                        /* Ancho del círculo */
+  height: 38px;                       /* Alto del círculo */
+  border-radius: 10px;                /* Esquinas redondeadas (casi círculo) */
+  background-color: #cf5f6f;           /* Fondo rojo coral */
+  color: #ffffff;                      /* Texto blanco */
+  display: inline-flex;                 /* Flexbox en línea */
+  align-items: center;                 /* Centrar letras verticalmente */
+  justify-content: center;             /* Centrar letras horizontalmente */
+  font-weight: 700;                   /* Letras en negrita */
+}
+
+/* ============================================ */
+/* chat-main: área principal del chat          */
+/* ============================================ */
+.chat-main {
+  min-width: 0;                       /* Permite que se achique si es necesario */
+  flex: 1;                            /* Ocupa todo el espacio restante */
+  display: flex;                        /* Flexbox interno */
+  flex-direction: column;               /* Apila header, mensajes y compositor */
+}
+
+/* ============================================ */
+/* chat-header: cabecera del chat              */
+/* ============================================ */
+.chat-header {
+  padding: 16px;                      /* Espacio interior */
+  border-bottom: 1px solid #343740;   /* Línea divisoria inferior */
+  background-color: #262a34;           /* Fondo ligeramente diferente */
+}
+
+/* ============================================ */
+/* brand-block: título de la app en el chat    */
+/* ============================================ */
+.chat-header .brand-block {
+  display: flex;                        /* Flexbox para alinear logo y título */
+  align-items: center;                 /* Centrar verticalmente */
+  gap: 10px;                         /* Espacio entre logo y título */
+}
+
+/* ============================================ */
+/* Título h1 en el header                      */
+/* ============================================ */
+.chat-header h1 {
+  margin: 0;                            /* Sin margen */
+  font-size: 40px;                    /* Título grande */
+}
+
+/* ============================================ */
+/* Párrafo en el header                        */
+/* ============================================ */
+.chat-header p {
+  margin: 2px 0 0;                     /* Margen superior pequeño */
+  color: #b4bac7;                      /* Color gris claro */
+  font-size: 18px;                    /* Tamaño del texto */
+}
+
+/* ============================================ */
+/* messages: área de mensajes                  */
+/* ============================================ */
+.messages {
+  flex: 1;                            /* Ocupa todo el espacio disponible */
+  padding: 16px;                      /* Espacio interior */
+  overflow: auto;                      /* Scroll si hay muchos mensajes */
+}
+
+/* ============================================ */
+/* composer-wrap: barra de escritura           */
+/* ============================================ */
+.composer-wrap {
+  padding: 12px 16px;                   /* Espacio interior */
+  border-top: 1px solid #343740;      /* Línea divisoria superior */
+  background-color: #262a34;           /* Fondo igual al header */
+}
+
+/* ============================================ */
+/* composer: textarea + botón                  */
+/* ============================================ */
+.composer {
+  display: flex;                        /* Flexbox: textarea a la izquierda, botón a la derecha */
+  gap: 10px;                         /* Espacio entre textarea y botón */
+}
+
+/* ============================================ */
+/* textarea del compositor                     */
+/* ============================================ */
+.composer textarea {
+  flex: 1;                            /* Ocupa todo el espacio disponible */
+  padding: 10px;                      /* Espacio interior */
+  border: 1px solid #454a57;         /* Borde gris */
+  border-radius: 10px;                /* Esquinas redondeadas */
+  background-color: #313542;           /* Fondo del textarea */
+  color: #ececf1;                      /* Color del texto */
+  font-size: 15px;                    /* Tamaño del texto */
+  resize: none;                       /* Evita que el usuario cambie el tamaño */
+}
+
+/* ============================================ */
+/* botón Send del compositor                   */
+/* ============================================ */
+.composer button {
+  border: none;                        /* Sin borde */
+  border-radius: 10px;                /* Esquinas redondeadas */
+  background-color: #cf5f6f;           /* Rojo coral UTNito */
+  color: #ffffff;                      /* Texto blanco */
+  padding: 0 20px;                     /* Padding solo horizontal */
+  font-size: 16px;                    /* Tamaño del texto */
+  font-weight: 700;                   /* Negrita */
+}
+
+/* ============================================ */
+/* botón Send deshabilitado                    */
+/* ============================================ */
+.composer button[disabled] {
+  opacity: 0.65;                      /* Más transparente cuando está deshabilitado */
+  cursor: not-allowed;                  /* Cursor de "no permitido" */
+}
