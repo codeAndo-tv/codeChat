@@ -18,11 +18,10 @@
 ## 🎥 Video de presentación
 
 <div align="center">
-
-[![Video presentación codeChat](https://img.youtube.com/vi/mz5YyegV9jw/maxresdefault.jpg)](https://youtu.be/mz5YyegV9jw)
-
-**👆 Dale play para ver de qué se trata (1 min)**
-
+  <a href="https://youtu.be/mz5YyegV9jw">
+    <img src="https://img.youtube.com/vi/mz5YyegV9jw/maxresdefault.jpg" alt="Video presentación codeChat" width="600">
+  </a>
+  <p><strong>👆 Dale play para ver de qué se trata (1 min)</strong></p>
 </div>
 
 ---
