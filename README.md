@@ -4,8 +4,6 @@
 
 <div align="center">
 
-![codeChat Banner](https://via.placeholder.com/900x300/1f2024/cf5f6f?text=💬+codeChat)
-
 # 💬 codeChat
 
 ### Angular desde Cero · Construí tu propio chat paso a paso
@@ -23,9 +21,9 @@
 
 <div align="center">
 
-[![Video presentación codeChat](https://img.youtube.com/vi/AQUI_EL_ID_DE_TU_VIDEO/maxresdefault.jpg)](https://youtu.be/mz5YyegV9jw)
+[![Video presentación codeChat](https://youtu.be/mz5YyegV9jw)](https://youtu.be/mz5YyegV9jw)
 
-**👆 Dale play para ver de qué se trata (2 min)**
+**👆 Dale play para ver de qué se trata (1 min)**
 
 </div>
 
