@@ -13,21 +13,18 @@
 [![YouTube](https://img.shields.io/badge/YouTube-codeAndo__-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@codeAndo_)
 [![Guía Online](https://img.shields.io/badge/Guía_Online-codeando.tv-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://codeando-tv.github.io/codeAndo)
 
-</div>
-
 ---
 
 ## 🎥 Video de presentación
 
 <div align="center">
 
-[![Video presentación codeChat](https://youtu.be/mz5YyegV9jw)](https://youtu.be/mz5YyegV9jw)
+[![Video presentación codeChat](https://img.youtube.com/vi/mz5YyegV9jw/maxresdefault.jpg)](https://youtu.be/mz5YyegV9jw)
 
 **👆 Dale play para ver de qué se trata (1 min)**
 
 </div>
 
----
 
 ## 💬 ¿Qué es codeChat?
 
