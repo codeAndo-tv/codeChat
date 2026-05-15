@@ -10,6 +10,9 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   username: string = '';
   password: string = '';
+  chatTitle: string = 'Juanito';
+  isLoading: boolean = true;
+
   
   constructor(private router: Router) {}
 

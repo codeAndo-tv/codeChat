@@ -1,7 +1,7 @@
 <main class="login-page">
   <section class="login-card">
     <div class="brand-block">
-      <h1>Welcome to codeChat</h1>
+      <h1>Welcome to {{ chatTitle }}</h1>
     </div>
 
     <p class="subtitle">Sign in to chat with <strong>codeChat</strong>.</p>
@@ -15,7 +15,7 @@
 
       <input id="password" type="password" placeholder="Enter your password" />
 
-      <button type="button" (click)="onLogin()">Login</button>
+      <button type="button" (click)="onLogin()" [disabled] = "isLoading">{{isLoading ? 'Cargando...' : 'Login'}}</button>
     </form>
   </section>
 </main>
