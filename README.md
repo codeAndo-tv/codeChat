@@ -50,7 +50,7 @@ Cada capítulo tiene su video en YouTube y su código en este repositorio.
 | 1 | ¿Qué es Angular? Instalación | ▶️ Ver | ✅ Listo |
 | 2 | Componentes: Login y Chat | ▶️ Ver | ✅ Listo |
 | 2.5 | Rutas y navegación | ▶️ Ver | ✅ Listo |
-| 3 | Interpolación y Property Binding | ⏳ Pronto | ✅ Guía lista |
+| 3 | Interpolación y Property Binding | ▶️ Ver | ✅ Listo |
 | 4 | Event Binding y Two-Way Binding | ⏳ Pronto | ✅ Guía lista |
 | 5 | Formularios Reactivos | ⏳ Pronto | ✅ Guía lista |
 
